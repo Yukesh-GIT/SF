@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import logo from '../Assets/logo.png'
+import logo from '../Assets/logo1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
@@ -13,8 +13,8 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className="nav-logo">
-            <img src = {logo} alt="" height={50} width={80}/>
-         </div>   
+            <img src = {logo} alt=""/>
+         </div> 
          <ul className="nav-menu">
             <li onClick={()=>{setMenu("home")}}><Link to="/">Home</Link>{menu==="home"?<hr />:<></>}</li>
             <li onClick={()=>{setMenu("Sports")}}><Link to="/Sports">Sports</Link>{menu==="Sports"?<hr/>:<></>}</li>
