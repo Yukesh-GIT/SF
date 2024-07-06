@@ -1,5 +1,7 @@
 import React from 'react'
 import './Item.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const Item = (props) => {
   return (
@@ -18,6 +20,13 @@ const Item = (props) => {
               <p>{props.new_price}</p>
             </div>
           </div>
+          <div className='star'>
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+              <FontAwesomeIcon icon={faStar} />
+            </div>
         </div>
       </div>
     </div>
